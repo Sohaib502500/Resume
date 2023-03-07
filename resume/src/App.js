@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Resume from './resume/Resume.tsx';
+import Resume from './Components/Resume.tsx';
 
 function App() {
   return (
