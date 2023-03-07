@@ -1,7 +1,8 @@
 import React from "react";
 import "./Resume.css";
 
-import AboutMe from './AboutMe.tsx';
+import AboutMe from './AboutMe';
+
 //import profileDP from "/Resources/profileSohaib.png";
 //import github from "/Resources/github.png";
 //import linkedin from "/Resources/linkedin.png";
