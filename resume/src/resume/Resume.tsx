@@ -1,10 +1,11 @@
 import React from "react";
 import "./Resume.css";
+
 import AboutMe from './AboutMe.tsx';
-import profileDP from "./../Resources/profileSohaib.png";
-import github from "./../Resources/github.png";
-import linkedin from "./../Resources/linkedin.png";
-import stackoverflow from "./../Resources/stackoverflow.png";
+//import profileDP from "/Resources/profileSohaib.png";
+//import github from "/Resources/github.png";
+//import linkedin from "/Resources/linkedin.png";
+//import stackoverflow from "/Resources/stackoverflow.png";
 
 export default function Resume() {
   return (
@@ -21,7 +22,7 @@ export default function Resume() {
       <div className="bg-white mx-auto p-10 border-blue rounded-3xl border-[3px] shadow-2xl w-[30rem] h-[42rem] flex-row flex-shrink-0 border-[#0ea5e9] mt-11 mb-10">
         <img
           className="h-[150px] w-[150px] rounded-full"
-          src={profileDP}
+          src="/Resources/profileSohaib.png"
           alt="Profile"
         ></img>
         <div className="left-0 text-slate-900 text-xl font-thin mx-0 mt-7 text-left">
@@ -48,21 +49,21 @@ export default function Resume() {
           <button className="relative group h-6 w-6 ml-2 mt-4">
             <img
               className="h-full w-full "
-              src={linkedin}
+              src="/Resources/linkedin.png"
               alt="LinkedIn"
             ></img>
           </button>
           <button className="relative group h-6 w-6 ml-4 mt-4">
             <img
               className="h-full w-full "
-              src={github}
+              src="/Resources/github.png"
               alt="GitHub"
             ></img>
           </button>
           <button className="relative group h-6 w-6 ml-4 mt-4">
             <img
               className="h-full w-full"
-              src={stackoverflow}
+              src="/Resources/stackoverflow.png"
               alt="StackOverFlow"
             ></img>
           </button>
