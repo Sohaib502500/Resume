@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
-    <div className="w-full bg-sky-500 h-[46rem] flex">
+    <div className="w-full bg-sky-500 min-h-[46rem] flex">
       <div className="w-[42rem] border-[2px] border-white rounded-3xl shadow-2xl mx-auto mt-10 mb-16">
         <div className="m-12 flex-col">
           <div className="left-0 text-white font-extrabold text-6xl mx-0 my-0 text-left mt-5">
@@ -26,52 +26,70 @@ export default function AboutMe() {
             successfully deployed at a number of know universities. I also hired
             and trained a team of 4 technichians to maintain the product.
           </div>
-          <div className="border-t-[1px] border-white">
-            <div className="mt-5 content-center flex space-x-1">
+          <div className="border-t-[1px] border-white flex-grow">
+            <div className="mt-2 flex flex-wrap flex-shrink-0 gap-5 md:gap-2 justify-center">
+
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
                 "Typescript"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                 "Javascript"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg",
                 "Android"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
                 "iOS"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
                 "Swift"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
                 "Java"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                 "React"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
                 "Php"
               )}
               {getIcon(
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "Gradle"
+              )}
+              {getIcon(
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg",
                 "Objective-C"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
                 "Mac Desktop"
               )}
               {getIcon(
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
-                "Typescript"
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+                "Android Studios"
               )}
+                {getIcon(
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+                "Github"
+              )}
+                {getIcon(
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
+                "Visual Studio"
+              )}
+                {getIcon(
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg",
+                "XCode"
+              )}
+              
             </div>
           </div>
         </div>
@@ -83,7 +101,7 @@ export default function AboutMe() {
 function getIcon(icon: string, desc: string) {
   return (
     <div className="relative group bg-center flex-col content-center">
-      <img className="h-7 w-7 mx-auto" src={icon} alt={desc}></img>
+      <img className="h-7 w-7 mx-auto fill-white" src={icon} alt={desc}></img>
       <div className="text-white text-xs text-extralight mt-1">{desc}</div>
     </div>
   );

@@ -3,11 +3,6 @@ import "./Resume.css";
 
 import AboutMe from './AboutMe';
 
-//import profileDP from "/Resources/profileSohaib.png";
-//import github from "/Resources/github.png";
-//import linkedin from "/Resources/linkedin.png";
-//import stackoverflow from "/Resources/stackoverflow.png";
-
 export default function Resume() {
   return (
     <div className="border-x-transparent bg-white w-full h-screen mx-0 my-0">
